@@ -1,0 +1,27 @@
+{
+  "name": "tiny-delegate",
+  "main": "dist/tinydelegate.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/scottcorgan/tiny-delegate",
+  "authors": [
+    "Scott Corgan <scottcorgan@gmail.com>"
+  ],
+  "description": "Event delegation for DOM events",
+  "keywords": [
+    "delegate",
+    "dom",
+    "event",
+    "tiny"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.js",
+    ".gitignore",
+    "package.json"
+  ]
+}

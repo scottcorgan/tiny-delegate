@@ -1,0 +1,58 @@
+{
+  "name": "tiny-delegate",
+  "version": "0.1.0",
+  "description": "Event delegation for DOM events",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/testling | node_modules/.bin/tspec",
+    "bundle": "node_modules/.bin/browserify index.js -s tinyDelegate > dist/tinydelegate.js",
+    "minify": "node_modules/.bin/uglifyjs dist/tinydelegate.js -m -c -o dist/tinydelegate.min.js",
+    "build": "npm run bundle && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottcorgan/tiny-delegate.git"
+  },
+  "keywords": [
+    "event",
+    "dom",
+    "delegation",
+    "delegate",
+    "tiny"
+  ],
+  "author": "Scott Corgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottcorgan/tiny-delegate/issues"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2",
+    "testling": "~1.5.9",
+    "tap-spec": "~0.1.3",
+    "browserify": "~3.24.5",
+    "uglify-js": "~2.4.12",
+    "tiny-element": "~0.1.3",
+    "tiny-dom": "~0.1.0",
+    "tiny-trigger": "~0.1.2"
+  },
+  "testling": {
+    "files": [
+      "test/index.js"
+    ],
+    "browsers": [
+      "iexplore/10.0",
+      "iexplore/9.0",
+      "iexplore/8.0",
+      "firefox/16..latest",
+      "chrome/22..latest",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  },
+  "dependencies": {
+    "tiny-element": "~0.1.3",
+    "closest": "0.0.1"
+  }
+}
