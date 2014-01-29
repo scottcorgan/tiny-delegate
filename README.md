@@ -1,6 +1,8 @@
 # tiny-delegate
  
 Event delegation for DOM events
+
+[![browser support](https://ci.testling.com/scottcorgan/tiny-delegate.png)](https://ci.testling.com/scottcorgan/tiny-delegate)
  
 ## Install
  
